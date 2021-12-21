@@ -26,7 +26,7 @@ number66 = random.randint(1, 49)
 
 # Game1
 
-print("Hello there!You have the opportunity to choose between these two games:\nGame1 - Toto 5 out of 35."
+print("Hello! You have the opportunity to choose between these two games:\nGame1 - Toto 5 out of 35."
       "\nGame2 - Toto 6 out of 49.\nIf you play 'Toto 5 out of 35' and guess the five numbers,you will win $500,000. "
       "If you play 'Toto 6 out of 49' and guess the six numbers, you will win $750,000.\nWhich one are you choosing?")
 
