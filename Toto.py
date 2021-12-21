@@ -11,24 +11,25 @@ guessed_numbers1 = []
 guessed_numbers2 = []
 
 # number
-number1 = random.randint(1,35)
-number11 = random.randint(1,49)
-number2 = random.randint(1,35)
-number22 = random.randint(1,49)
-number3 = random.randint(1,35)
-number33 = random.randint(1,49)
-number4 = random.randint(1,35)
-number44 = random.randint(1,49)
-number5 = random.randint(1,35)
-number55 = random.randint(1,49)
-number6 = random.randint(1,35)
-number66 = random.randint(1,49)
+number1 = random.randint(1, 35)
+number11 = random.randint(1, 49)
+number2 = random.randint(1, 35)
+number22 = random.randint(1, 49)
+number3 = random.randint(1, 35)
+number33 = random.randint(1, 49)
+number4 = random.randint(1, 35)
+number44 = random.randint(1, 49)
+number5 = random.randint(1, 35)
+number55 = random.randint(1, 49)
+number6 = random.randint(1, 35)
+number66 = random.randint(1, 49)
 
 # Game1
 
 print("Hello there!You have the opportunity to choose between these two games:\nGame1 - Toto 5 out of 35."
       "\nGame2 - Toto 6 out of 49.\nIf you play 'Toto 5 out of 35' and guess the five numbers,you will win $500,000. "
       "If you play 'Toto 6 out of 49' and guess the six numbers, you will win $750,000.\nWhich one are you choosing?")
+
 user_input = input("I'm choosing:\n")
 
 while attempts1 == 5:
@@ -77,6 +78,9 @@ while attempts2 < 6:
     guess2 = int(input())
     attempts2 += 1
     if attempts2 == 6:
+        print("Game Over!The six numbers were " + str(number11) + "," + str(number22) + "," + str(number33) + "," +
+              str(number44) + "," + str(number55) + "," + str(number66) + ".")
+        print("Guessed numbers: " + str(guessed_numbers2))
         break
     elif guess2 == number11:
         guessed_numbers2.append(number11)
@@ -104,7 +108,41 @@ while attempts2 < 6:
     elif guessed_numbers2 == [number11, number22, number33, number44, number55, number66]:
         print("Congratulations!You guessed the six numbers!Your prize is: $750,000.")
         break
-    
-print("Game Over!The six numbers were " + str(number11) + "," + str(number22) + "," + str(number33) + "," +
-      str(number44) + "," + str(number55) + "," + str(number66) + ".")
-print("Guessed numbers: " + str(guessed_numbers2))
+
+# If 'Game2' has already been chosen first.
+
+while attempts1 == 5:
+    break
+if attempts1 == 0 and attempts2 == 6:
+    print("\nThere is one game left: Game1\nTry your luck one more time!\nI'm guessing:")
+    while attempts1 < 5:
+        guess1 = int(input())
+        attempts1 += 1
+        if attempts1 == 5:
+            print("Game Over!The five numbers were " + str(number1) + "," + str(number2) + "," + str(number3) + "," +
+                  str(number4) + "," + str(number5) + ".")
+            print("Guessed numbers: " + str(guessed_numbers1))
+            print("\nGame is Over! You tried your chance!")
+            break
+        elif guess1 == number1:
+            guessed_numbers1.append(number1)
+            print("You guessed correctly!")
+            continue
+        elif guess1 == number2:
+            guessed_numbers1.append(number2)
+            print("You guessed correctly!")
+            continue
+        elif guess1 == number3:
+            guessed_numbers1.append(number3)
+            print("You guessed correctly!")
+            continue
+        elif guess1 == number4:
+            guessed_numbers1.append(number4)
+            print("You guessed correctly!")
+            continue
+        elif guess1 == number5:
+            guessed_numbers1.append(number5)
+            print("You guessed correctly!")
+        elif guessed_numbers1 == [number1, number2, number3, number4, number5]:
+            print("Congratulations!You guessed the five numbers!Your prize is: $500,000.")
+            break
