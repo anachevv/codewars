@@ -39,12 +39,19 @@ if user_input == "Game1":
     while attempts1 < 5:
         guess1 = int(input())
         attempts1 += 1
+
         if attempts1 == 5:
-            print("Game Over!The five numbers were " + str(number1) + "," + str(number2) + "," + str(number3) + "," +
+            print("Game over!The five numbers were " + str(number1) + "," + str(number2) + "," + str(number3) + "," +
                   str(number4) + "," + str(number5) + ".")
-            print("Guessed numbers: " + str(guessed_numbers1))
+
+            if len(guessed_numbers1) == 1:
+                print("Guessed number: " + str(guessed_numbers1))
+            else:
+                print("Guessed numbers: " + str(guessed_numbers1))
+
             print("\nThere is one game left: Game2\nTry your luck one more time!\nI'm guessing:")
             break
+
         elif guess1 == number1:
             guessed_numbers1.append(number1)
             print("You guessed correctly!")
@@ -77,11 +84,17 @@ if user_input == "Game2":
 while attempts2 < 6:
     guess2 = int(input())
     attempts2 += 1
+
     if attempts2 == 6:
-        print("Game Over!The six numbers were " + str(number11) + "," + str(number22) + "," + str(number33) + "," +
+        print("Game over!The six numbers were " + str(number11) + "," + str(number22) + "," + str(number33) + "," +
               str(number44) + "," + str(number55) + "," + str(number66) + ".")
-        print("Guessed numbers: " + str(guessed_numbers2))
+        if len(guessed_numbers2) == 1:
+            print("Guessed number: " + str(guessed_numbers2))
+        else:
+            print("Guessed numbers: " + str(guessed_numbers2))
+
         break
+
     elif guess2 == number11:
         guessed_numbers2.append(number11)
         print("You guessed correctly!")
@@ -119,10 +132,10 @@ if attempts1 == 0 and attempts2 == 6:
         guess1 = int(input())
         attempts1 += 1
         if attempts1 == 5:
-            print("Game Over!The five numbers were " + str(number1) + "," + str(number2) + "," + str(number3) + "," +
+            print("Game over!The five numbers were " + str(number1) + "," + str(number2) + "," + str(number3) + "," +
                   str(number4) + "," + str(number5) + ".")
             print("Guessed numbers: " + str(guessed_numbers1))
-            print("\nGame is Over! You tried your chance!")
+            print("\nGame is over! You tried your chance!")
             break
         elif guess1 == number1:
             guessed_numbers1.append(number1)
