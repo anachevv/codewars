@@ -6,7 +6,7 @@ computer = 0
 print("Three points win the game!")
 
 while player < 3 and computer < 3:
-    computer_choice = random.choice(["rock,","paper","scissors"])
+    computer_choice = random.choice(["rock","paper","scissors"])
     player_choice = input("Rock, Paper or Scissors: ")
 
     print(f"Computer: {computer_choice} VS Player: {player_choice}")
