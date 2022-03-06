@@ -11,18 +11,18 @@ guessed_numbers1 = []
 guessed_numbers2 = []
 
 # number
-number1 = random.randint(1, 35)
-number11 = random.randint(1, 49)
-number2 = random.randint(1, 35)
-number22 = random.randint(1, 49)
-number3 = random.randint(1, 35)
-number33 = random.randint(1, 49)
-number4 = random.randint(1, 35)
-number44 = random.randint(1, 49)
-number5 = random.randint(1, 35)
-number55 = random.randint(1, 49)
-number6 = random.randint(1, 35)
-number66 = random.randint(1, 49)
+number1 = random.randint(1, 36)
+number11 = random.randint(1, 50)
+number2 = random.randint(1, 36)
+number22 = random.randint(1, 50)
+number3 = random.randint(1, 36)
+number33 = random.randint(1, 50)
+number4 = random.randint(1, 36)
+number44 = random.randint(1, 50)
+number5 = random.randint(1, 36)
+number55 = random.randint(1, 50)
+number6 = random.randint(1, 36)
+number66 = random.randint(1, 50)
 
 # Game1
 
