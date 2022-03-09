@@ -1,6 +1,6 @@
 import random
 
-number = random.randint(1,10)
+number = random.randint(1,10 + 1)
 attempts = 0
 print("Guess the secret number between 1 and 10:")
 while attempts < 5:
