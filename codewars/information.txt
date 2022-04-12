@@ -1,0 +1,2 @@
+INFORMATION:
+This is a folder with my solutions to problems from codewars.com. The solutions are made according to the judge system of the site.
