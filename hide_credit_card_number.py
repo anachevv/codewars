@@ -1,3 +1,10 @@
+# THIS IS A SIMPLE hide_credit_card_number CODE! IT IS NOT INTENDED FOR SERIOUS USE!
+
+
+
+
+
+
 # def hide():
 #     card_number = input("Please input your credit card number:\n")
 #     card_number_length = len(card_number)
