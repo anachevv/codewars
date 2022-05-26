@@ -2,7 +2,7 @@ user_input = input()
 total_sum = 0
 word_length = len(user_input)
 
-for x in range(0, len(user_input)):
+for x in range(word_length):
     if user_input[x] == "a" or user_input[x] == "A":
         total_sum += 1
     if user_input[x] == "e" or user_input[x] == "E":
