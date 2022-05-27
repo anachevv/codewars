@@ -1,6 +1,5 @@
-from PyQt5.QtCore import QFile
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QFont, QStandardItemModel, QStandardItem
+from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5 import uic, QtGui
 import pickle
 
