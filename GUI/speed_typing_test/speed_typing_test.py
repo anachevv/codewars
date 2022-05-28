@@ -9,16 +9,16 @@ class TypeSpeedGUI:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Typing Speed App")
-        self.root.geometry("1000x700")
+        self.root.geometry("1150x700")
 
         self.texts = open("texts.txt", "r").read().split("\n")
 
         self.frame = tk.Frame(self.root)
 
-        self.sample_label = tk.Label(self.frame, text=random.choice(self.texts), font=("Helvetica", 18))
+        self.sample_label = tk.Label(self.frame, text=random.choice(self.texts), font=("Helvetica", 22))
         self.sample_label.grid(row=0, column=0, columnspan=2, padx=50, pady=50)
         
-        self.input_entry = tk.Entry(self.frame, width=40, font=("Helvetica", 20))
+        self.input_entry = tk.Entry(self.frame, width=55, font=("Helvetica", 19))
         self.input_entry.grid(row=1, column=0, columnspan=2, padx=5, pady=10)
         self.input_entry.bind("<KeyRelease>", self.start)
 
