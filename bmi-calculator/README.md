@@ -1,4 +1,4 @@
-<h1>BMI calculator</h1>
+<h1>BMI Calculator</h1>
 <p>This is a simple BMI calculator based on PyWebIO. 
 Here is a link to the PyWebIO documentation about running a server: <a href="https://pywebio.readthedocs.io/en/latest/guide.html#run-application">Click here</a></p>
 <h2>Height input:</h2>
