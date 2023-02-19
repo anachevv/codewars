@@ -18,13 +18,15 @@ public class Main {
         for(int i = 0;i < strArr.length;i++) {
             arr[i] = Integer.parseInt(strArr[i]);
         }
+        int max, min;
 
         if (arr.length == 1) {
-            return String.format("%d %d", arr[0], arr[0]);
+            max = min = arr[0];
         }
-
-        int max = Arrays.stream(arr).max().orElse(0);
-        int min = Arrays.stream(arr).min().orElse(0);
+        else {
+            max = Arrays.stream(arr).max().orElse(0);
+            min = Arrays.stream(arr).min().orElse(0);
+        }
         return String.format("%d %d", max, min);
     }
 }
