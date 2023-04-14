@@ -31,16 +31,17 @@ public class DuplicateEncoder {
     }
 
     public static String stringSplit(String s) {
+        s = s.toLowerCase();
         String result = "";
         Map<String, Integer> map = new HashMap<>();
 
         for (int idx=0;idx<s.length();++idx) {
-            String c = String.valueOf(s.charAt(idx)).toLowerCase();
+            String c = String.valueOf(s.charAt(idx)));
             map.merge(c, 1, Integer::sum);
         }
 
         for (int idx=0;idx<s.length();++idx) {
-            String c = String.valueOf(s.charAt(idx)).toLowerCase();
+            String c = String.valueOf(s.charAt(idx));
             if (map.get(c) == 1) {
                 result += '(';
             }
